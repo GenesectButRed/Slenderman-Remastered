@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "slendermanremastered",
+	"version": "${version}",
+	"name": "Slenderman Remastered",
+	"description": "Adds the legendary Slender Man to the game. Beware!",
+	"authors": [
+		"theredgenesect"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/slendermanremastered/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.red.slenderman.SlendermanRemastered"
+		],
+		"client": [
+			"net.red.slenderman.SlendermanRemasteredClient"
+		],
+		"fabric-datagen": [
+			"net.red.slenderman.SlendermanRemasteredDataGenerator"
+		]
+	},
+	"mixins": [
+		"slenderman.remastered.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
